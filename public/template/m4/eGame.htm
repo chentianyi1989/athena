@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <title>湘娱演示,联系Q：2697173363</title>
+    <meta name="csrf-token" content="PRqwyz7BiSPWRGfNCNmhIwKC3SVbIOKhzTOe1FeQ">
+    <meta name="keywords" content="湘娱演示,联系Q：2697173363">
+    <link rel="stylesheet" href="web/css/flexslider.css" tppabs="http://mb3.uc697.com/web/css/flexslider.css">
+    <link rel="stylesheet" href="web/css/style.css" tppabs="http://mb3.uc697.com/web/css/style.css">
+    <link rel="stylesheet" href="web/css/index1.css" tppabs="http://mb3.uc697.com/web/css/index1.css">
+    <link rel="stylesheet" href="web/fonts/iconfont.css" tppabs="http://mb3.uc697.com/web/fonts/iconfont.css">
+    <link rel="stylesheet" href="web/css/yk_modal.css" tppabs="http://mb3.uc697.com/web/css/yk_modal.css">
+    <script src="web/js/jquery-2.1.3.min.js" tppabs="http://mb3.uc697.com/web/js/jquery-2.1.3.min.js"></script>
+</head>
+<body class="lay-out">
+
+<!--登录模态框-->
+<div id="login" class="modal modal-login">
+    <div class="modal-content">
+        <form method="POST" action="http://mb3.uc697.com/member/login">
+            <a href="" class="close bg-icon"></a>
+            <div class="modal-login_form">
+                <h2>用户登录</h2>
+                <div class="modal-login_line">
+                    <input class="username" type="text" placeholder="请输入用户名" required name="name">
+                </div>
+                <div class="modal-login_line">
+                    <input class="psw" type="password" placeholder="请输入密码" required name="password">
+                </div>
+                <!-- <div class="modal-login_line code">
+                    <input type="text" placeholder="请输入验证码" required name="code">
+                    <img src="" alt="" width="100">
+                </div> -->
+                <div class="modal-login_line">
+                    <button class="modal-login_submit ajax-submit-btn" type="button">登录</button>
+                </div>
+                <div class="modal-login_link clear">
+                    <p class="pullRight">
+                        还没有账号？
+                        <a href="r.htm" tppabs="http://mb3.uc697.com/r">点击注册</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--半透明遮罩层-->
+<div class="backdrop"></div>
+
+
+<div class="tai_header">
+    <div class="tai_header-top">
+        <div class="container">
+            <div class="language">
+                <span class="pic01"></span>
+            </div>
+            <div class="div-tel">
+                24小时客服QQ: 2697173363
+                <span style="margin-left: 10px;">美东时间: <em id="mdtime"></em></span>
+            </div>
+            <ul class="top-nav">
+                
+                    
+                    
+                
+                <li>
+                    <a style="color: red" href="javascript:;" class="slide_down">
+                        牌照展示
+                        <img src="web/images/paizhao.png" tppabs="http://mb3.uc697.com/web/images/paizhao.png" alt="">
+                    </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="login.htm" tppabs="http://mb3.uc697.com/member/finance_center">快速充值</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="javascript:;" class="daili_apply">代理合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="activities.htm" tppabs="http://mb3.uc697.com/activities">活动大厅</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="" target="_blank">手机APP下载</a>
+                </li>
+                
+                    
+                    
+                        
+                        
+                    
+                
+            </ul>
+        </div>
+    </div>
+    <div class="tai_nav">
+        <span class="logo-bg">
+            <img src="" alt="">
+        </span>
+        <ul class="pullRight">
+            <li >
+                <a href="index.htm" tppabs="http://mb3.uc697.com/">
+                    首页
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="has-menu ">
+                <a href="liveCasino.htm" tppabs="http://mb3.uc697.com/liveCasino">
+                    真人视讯
+                    <span>LIVE CASINO</span>
+                </a>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                
+            </li>
+            <li >
+                <a href="lottory.htm" tppabs="http://mb3.uc697.com/lottory">
+                    彩票游戏
+                    <span>LOTTORY</span>
+                </a>
+            </li>
+            <li  class="on" >
+                <a href="eGame-api_name=MG.htm" tppabs="http://mb3.uc697.com/eGame?api_name=MG">
+                    电子游艺
+                    <span>EGAMES</span>
+                </a>
+            </li>
+            <li >
+                <a href="catchFish.htm" tppabs="http://mb3.uc697.com/catchFish">
+                    捕鱼游戏
+                    <span>CATCHFISH</span>
+                </a>
+            </li>
+            <li >
+                <a href="esports.htm" tppabs="http://mb3.uc697.com/esports">
+                    体育游戏
+                    <span>ESPORTS</span>
+                </a>
+            </li>
+                            <li>
+                    <a href="javascript:;"
+                        onclick="return layer.msg('请先登录!',{icon:6})" >
+                        棋牌游戏 <span class="en">Poker</span>
+                    </a>
+                </li>
+                        <li >
+                <a href="activities.htm" tppabs="http://mb3.uc697.com/activities">
+                    优惠活动
+                    <span>PROMOTIONS</span>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank" >
+                    手机投注
+                    <span>MOBILE</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;"  onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2697173363&site=qq&menu=yes','','width=1024,height=768')">
+                    在线客服
+                    <span>SERVICE</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="tai_header-bot  scrollTop ">
+    <div class="wrapper">
+        <div class="account-box">
+                            <form method="POST" action="http://mb3.uc697.com/member/login">
+                    <input type="text" id="login_account" placeholder="账号" class="username" required name="name">
+                    <input type="password" id="login_password" placeholder="密码" class="psw" required name="password">
+                    <div class="check-code-wrapper">
+                        <input type="text" placeholder="请输入验证码" required name="captcha" onfocus="re_captcha_re();">
+                        <img onclick="javascript:re_captcha_re();" src="kit/captcha/1" tppabs="http://mb3.uc697.com/kit/captcha/1"
+                             id="c2c98f0de5a04167a9e427d883690ff11"
+                        style="display: inline-block;width: 80px;">
+                        <script>
+                            function re_captcha_re() {
+                                $url = "http://mb3.uc697.com/kit/captcha";
+                                $url = $url + "/" + Math.random();
+                                document.getElementById('c2c98f0de5a04167a9e427d883690ff11').src=$url;
+                            }
+                        </script>
+                    </div>
+                    <button class="login-box modal-login_submit ajax-submit-btn" type="button">立即登录</button>
+
+                    <a href="r.htm" tppabs="http://mb3.uc697.com/r" class="join-btn">免费开户</a>
+                </form>
+                    </div>
+    </div>
+</div>
+
+    <div class="body" style="background: url('http://mb3.uc697.com/web/images/egame-banner.jpg') no-repeat;">
+        <div class="container tbbg-margin">
+            <div class="notice clear" style="margin-top:-220px">
+                <div class="notice-bg"></div>
+                <div class="notice-title pullLeft">
+                    <div class="notice-title_bg"></div>
+                    <span class="bg-icon pullLeft"></span>
+                    系统公告
+                </div>
+                <marquee id="mar0" scrollAmount="4" direction="left" onmouseout="this.start()"
+                         onmouseover="this.stop()">
+                                            <span>~湘娱Game唯一联系方式~</span>
+                        <span>QQ:2697173363、2697173363</span>
+                                    </marquee>
+            </div>
+            <div class="egameslide">
+                <div class="hd">
+                    <ul>
+                                                            <li  class="on" >
+                                    <a href="eGame-api_name=PT.htm" tppabs="http://mb3.uc697.com/eGame?api_name=PT">
+                                    <p class="pic">
+                                        <img src="web/images/app-bg-pt1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-pt1.png" class="default">
+                                        <img src="web/images/app-bg-pt2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-pt2.png" class="activepic">
+                                    </p>
+                                    <p class="tit">PT厅</p>
+                                    </a>
+                                </li>
+                                                                                <li >
+                                <a href="eGame-api_name=MG.htm" tppabs="http://mb3.uc697.com/eGame?api_name=MG">
+                                <p class="pic">
+                                    <img src="web/images/app-bg-mg1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-mg1.png" class="default">
+                                    <img src="web/images/app-bg-mg2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-mg2.png" class="activepic">
+                                </p>
+                                <p class="tit">MG厅</p>
+                                </a>
+                            </li>
+                                                                            <li >
+                                <a href="eGame-api_name=BBIN.htm" tppabs="http://mb3.uc697.com/eGame?api_name=BBIN">
+                                <p class="pic">
+                                    <img src="web/images/app-bg-by1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-by1.png" class="default">
+                                    <img src="web/images/app-bg-bb2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-bb2.png" class="activepic">
+                                </p>
+                                <p class="tit">BB厅</p>
+                                </a>
+                            </li>
+                                                                            <li >
+                                <a href="eGame-api_name=SA.htm" tppabs="http://mb3.uc697.com/eGame?api_name=SA">
+                                <p class="pic">
+                                    <img src="web/images/app-bg-sa1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-sa1.png" class="default">
+                                    <img src="web/images/app-bg-sa2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-sa2.png" class="activepic">
+                                </p>
+                                <p class="tit">SA厅</p>
+                                </a>
+                            </li>
+                                                                            <li >
+                                <a href="eGame-api_name=DT.htm" tppabs="http://mb3.uc697.com/eGame?api_name=DT">
+                                <p class="pic">
+                                    <img src="web/images/app-bg-dt1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-dt1.png" class="default">
+                                    <img src="web/images/app-bg-dt2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-dt2.png" class="activepic">
+                                </p>
+                                <p class="tit">DT厅</p>
+                                </a>
+                            </li>
+                                                                            <li >
+                                <a href="eGame-api_name=TTG.htm" tppabs="http://mb3.uc697.com/eGame?api_name=TTG">
+                                <p class="pic">
+                                    <img src="web/images/app-bg-ttg1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-ttg1.png" class="default">
+                                    <img src="web/images/app-bg-ttg2.png" tppabs="http://mb3.uc697.com/web/images/app-bg-ttg2.png" class="activepic">
+                                </p>
+                                <p class="tit">TTG厅</p>
+                                </a>
+                            </li>
+                                                                            <div class="last">
+                                <a href="javascript:;"
+                                    onclick="return layer.msg('请先登录!',{icon:6})" >
+                                    <p class="pic">
+                                        <img src="web/images/app-bg-ag1.png" tppabs="http://mb3.uc697.com/web/images/app-bg-ag1.png" style="display: inline;">
+                                    </p>
+                                    <p class="tit">AG电子游戏</p>
+                                </a>
+                            </div>
+                        
+                    </ul>
+                </div>
+                <div class="bd">
+                                            
+                        <div class="module" style="display: block;">
+                            <div class="top">
+                                <div class="egameTit"></div>
+                                <div class="egame_filter_top">
+                                    <span class="title"><img src="web/images/pt-pic-bz.png" tppabs="http://mb3.uc697.com/web/images/pt-pic-bz.png">PT厅</span>
+                                    <span class="list_wrap active"><a href="javascript:void(0)"
+                                                                      class="list ">全部</a></span>
+
+                                    <div class="search_inp">
+                                        <form action="http://mb3.uc697.com/eGame" method="GET">
+                                            <input type="hidden" name="api_name" value="PT">
+                                            <input type="text" class="inp" placeholder="请输入游戏名称" name="name" value="" required>
+                                            <button type="submit"></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bodylist">
+                                <div class="egame_list">
+                                   <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/arc.jpg" class="lazy">
+                                                   <p class="collect">弓兵</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsatq.jpg" class="lazy">
+                                                   <p class="collect">亚特兰蒂斯女王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bob.jpg" class="lazy">
+                                                   <p class="collect">熊之舞</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/catqk.jpg" class="lazy">
+                                                   <p class="collect">猫女王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/chl.jpg" class="lazy">
+                                                   <p class="collect">樱桃之恋</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtscbl.jpg" class="lazy">
+                                                   <p class="collect">牛仔和外星人</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/dnr.jpg" class="lazy">
+                                                   <p class="collect">海豚礁</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsfc.jpg" class="lazy">
+                                                   <p class="collect">足球狂欢节</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fdt.jpg" class="lazy">
+                                                   <p class="collect">戴图理的神奇七</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gts46.jpg" class="lazy">
+                                                   <p class="collect">生命之神</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bib.jpg" class="lazy">
+                                                   <p class="collect">湛蓝深海</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ashhotj.jpg" class="lazy">
+                                                   <p class="collect">丛林心脏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtshwkp.jpg" class="lazy">
+                                                   <p class="collect">超级高速公路之王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtssmbr.jpg" class="lazy">
+                                                   <p class="collect">激情桑巴</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/samz.jpg" class="lazy">
+                                                   <p class="collect">亚马逊的秘密</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/shmst.jpg" class="lazy">
+                                                   <p class="collect">夏洛克的秘密</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/sis.jpg" class="lazy">
+                                                   <p class="collect">沉默的武士</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/tpd2.jpg" class="lazy">
+                                                   <p class="collect">泰国天堂</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsjzc.jpg" class="lazy">
+                                                   <p class="collect">爵士俱乐部</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/trl.jpg" class="lazy">
+                                                   <p class="collect">真爱</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gts52.jpg" class="lazy">
+                                                   <p class="collect">疯狂维京海盗</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/whk.jpg" class="lazy">
+                                                   <p class="collect">白狮王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtswg.jpg" class="lazy">
+                                                   <p class="collect">赌徒</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/vcstd.jpg" class="lazy">
+                                                   <p class="collect">豪华的开心假期</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsir.jpg" class="lazy">
+                                                   <p class="collect">浮冰流</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/donq.jpg" class="lazy">
+                                                   <p class="collect">堂吉诃德的财富</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsflzt.jpg" class="lazy">
+                                                   <p class="collect">飞龙在天</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ashamw.jpg" class="lazy">
+                                                   <p class="collect">原始亚马逊</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/zctz.jpg" class="lazy">
+                                                   <p class="collect">招财童子</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsswk.jpg" class="lazy">
+                                                   <p class="collect">孙悟空</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bs.jpg" class="lazy">
+                                                   <p class="collect">白狮</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/mgstk.jpg" class="lazy">
+                                                   <p class="collect">神奇堆栈</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/sx.jpg" class="lazy">
+                                                   <p class="collect">四象</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/topg.jpg" class="lazy">
+                                                   <p class="collect">捍卫战士</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/jqw.jpg" class="lazy">
+                                                   <p class="collect">金钱蛙</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/qnw.jpg" class="lazy">
+                                                   <p class="collect">权杖女王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/spud.jpg" class="lazy">
+                                                   <p class="collect">欧莱里之黄金大田</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/chao.jpg" class="lazy">
+                                                   <p class="collect">超级888</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gemq.jpg" class="lazy">
+                                                   <p class="collect">宝石女王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/longlong.jpg" class="lazy">
+                                                   <p class="collect">龙龙龙</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bfb.jpg" class="lazy">
+                                                   <p class="collect">布法罗闪电战</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/wlg.jpg" class="lazy">
+                                                   <p class="collect">舞龙</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/zcjb.jpg" class="lazy">
+                                                   <p class="collect">招财进宝</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/er.jpg" class="lazy">
+                                                   <p class="collect">开心假期</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/hlf.jpg" class="lazy">
+                                                   <p class="collect">万圣节财富</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bt.jpg" class="lazy">
+                                                   <p class="collect">百幕大三角</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/cm.jpg" class="lazy">
+                                                   <p class="collect">中国厨房</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/c7.jpg" class="lazy">
+                                                   <p class="collect">疯狂之七</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsdgk.jpg" class="lazy">
+                                                   <p class="collect">龙族</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/eas.jpg" class="lazy">
+                                                   <p class="collect">惊喜复活节</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/foy.jpg" class="lazy">
+                                                   <p class="collect">青春之泉</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fff.jpg" class="lazy">
+                                                   <p class="collect">酷炫水果农场</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fm.jpg" class="lazy">
+                                                   <p class="collect">古怪猴子</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/glg.jpg" class="lazy">
+                                                   <p class="collect">黄金游戏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/hh.jpg" class="lazy">
+                                                   <p class="collect">鬼屋</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gts50.jpg" class="lazy">
+                                                   <p class="collect">热力宝石</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/kkg.jpg" class="lazy">
+                                                   <p class="collect">无敌金刚</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/mcb.jpg" class="lazy">
+                                                   <p class="collect">Cash back先生</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/nk.jpg" class="lazy">
+                                                   <p class="collect">海王星王国</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/pl.jpg" class="lazy">
+                                                   <p class="collect">舞线</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/rky.jpg" class="lazy">
+                                                   <p class="collect">洛基传奇</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ssp.jpg" class="lazy">
+                                                   <p class="collect">圣诞奇迹</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/mmy.jpg" class="lazy">
+                                                   <p class="collect">木乃伊迷城</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ttc.jpg" class="lazy">
+                                                   <p class="collect">顶级王牌-明星</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ta.jpg" class="lazy">
+                                                   <p class="collect">三个朋友</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ub.jpg" class="lazy">
+                                                   <p class="collect">丛林巫师</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/wis.jpg" class="lazy">
+                                                   <p class="collect">我心狂野</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/wis.jpg" class="lazy">
+                                                   <p class="collect">黄金翅膀</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/dt2.jpg" class="lazy">
+                                                   <p class="collect">沙漠宝藏2</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ashfmf.jpg" class="lazy">
+                                                   <p class="collect">满月财富</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/glr.jpg" class="lazy">
+                                                   <p class="collect">角斗士</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsjhw.jpg" class="lazy">
+                                                   <p class="collect">约翰韦恩</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gts51.jpg" class="lazy">
+                                                   <p class="collect">幸运熊猫</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtsmrln.jpg" class="lazy">
+                                                   <p class="collect">玛丽莲·梦露</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/gtscb.jpg" class="lazy">
+                                                   <p class="collect">现金魔块</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/tclsc.jpg" class="lazy">
+                                                   <p class="collect">三个小丑刮刮乐</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/scs.jpg" class="lazy">
+                                                   <p class="collect">经典老虎机刮刮乐</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ash3brg.jpg" class="lazy">
+                                                   <p class="collect">3卡吹噓</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/rodz.jpg" class="lazy">
+                                                   <p class="collect">美式轮盘</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ba.jpg" class="lazy">
+                                                   <p class="collect">百家乐</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/cheaa.jpg" class="lazy">
+                                                   <p class="collect">赌场HOLD&#039;EM游戏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ro.jpg" class="lazy">
+                                                   <p class="collect">欧洲轮盘</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/rodz_g.jpg" class="lazy">
+                                                   <p class="collect">美式奖金轮盘赌</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ro_g.jpg" class="lazy">
+                                                   <p class="collect">欧式奖金轮盘赌</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ftg.jpg" class="lazy">
+                                                   <p class="collect">五虎将</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/aogs.jpg" class="lazy">
+                                                   <p class="collect">诸神时代</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/aztec.jpg" class="lazy">
+                                                   <p class="collect">印加帝国头奖</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bja.jpg" class="lazy">
+                                                   <p class="collect">美国21点</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/bl.jpg" class="lazy">
+                                                   <p class="collect">海滩生活</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/cnpr.jpg" class="lazy">
+                                                   <p class="collect">甜蜜派对</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ct.jpg" class="lazy">
+                                                   <p class="collect">船长的宝藏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/dlm.jpg" class="lazy">
+                                                   <p class="collect">情圣博士</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/dt.jpg" class="lazy">
+                                                   <p class="collect">沙漠宝藏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/evj.jpg" class="lazy">
+                                                   <p class="collect">所有人的大奖</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fbr.jpg" class="lazy">
+                                                   <p class="collect">终极足球</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/pfbj_mh5.jpg" class="lazy">
+                                                   <p class="collect">完美二十一点</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fmn.jpg" class="lazy">
+                                                   <p class="collect">水果狂</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fnfrj.jpg" class="lazy">
+                                                   <p class="collect">趣味水果</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/fow.jpg" class="lazy">
+                                                   <p class="collect">惊异之林</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ges.jpg" class="lazy">
+                                                   <p class="collect">艺伎故事</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/glrj.jpg" class="lazy">
+                                                   <p class="collect">角斗士彩池游戏</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/grel.jpg" class="lazy">
+                                                   <p class="collect">金色召集</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/hb.jpg" class="lazy">
+                                                   <p class="collect">一夜奇遇</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/hk.jpg" class="lazy">
+                                                   <p class="collect">高速公路之王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/kfp.jpg" class="lazy">
+                                                   <p class="collect">六福兽</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/lvb.jpg" class="lazy">
+                                                   <p class="collect">爱之船</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/ms.jpg" class="lazy">
+                                                   <p class="collect">魔幻吃角子老虎</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/pnp.jpg" class="lazy">
+                                                   <p class="collect">粉红豹</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/qop.jpg" class="lazy">
+                                                   <p class="collect">金字塔女王</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/sib.jpg" class="lazy">
+                                                   <p class="collect">银弹</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                                                                        <li class="scrollLoading" style="width: 130px;height: 168.44px">
+                                               <a href="javascript:;"
+                                                   onclick="return alert('请先登录！')" >
+                                                                                                      <img data-original="http://mb3.uc697.com/web/images/games/pt/wlcsh.jpg" class="lazy">
+                                                   <p class="collect">五路财神</p>
+                                                   <span class="button">开始游戏</span>
+                                               </a>
+                                           </li>
+                                                                                                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+                                                                                                                        
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notice_layer">
+        <h3>公告详情 <span class="close"></span></h3>
+        <div class="notice_con">
+                            <div class="module">
+                    <h4>湘娱Game唯一联系方式</h4>
+                    <p>✿QQ:2697173363、2697173363</p>
+                </div>
+                    </div>
+    </div>
+    <script>
+        (function ($) {
+            $(function () {
+                $('.live-ul li').on('mouseenter', function () {
+                    $(this).addClass('on').siblings('li').removeClass('on');
+                });
+                $('.egameslide').on('click', '.disabled', function () {
+                    layer.msg('暂未开通，敬请期待！', {icon: 6});
+                    return false;
+                });
+                jQuery(".egameslide").slide({trigger: "click", mainCell: ".bd"});
+
+                $("http://mb3.uc697.com/img.lazy").lazyload({
+                    placeholder: "web/images/egame-loading.gif"/*tpa=http://mb3.uc697.com/web/images/egame-loading.gif*/,
+                    effect: "fadeIn",
+                    skip_invisible: false  //解决滚动才显示的问题
+                });
+
+                //公告
+                $('#mar0').on('click', function () {
+                    var notice_index = layer.open({
+                        type: 1,
+                        title: false,
+                        closeBtn: 0,
+                        area: ['680px'],
+                        skin: 'layui-layer-nobg', //没有背景色
+                        shadeClose: true,
+                        content: $('.notice_layer')
+                    });
+
+                    $('.notice_layer').on('click', '.close', function () {
+                        layer.close(notice_index)
+                    })
+                })
+
+
+            });
+
+
+        })(jQuery)
+    </script>
+<div class="aside">
+    <div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <ul>
+            <li>
+                <a href="javascript:;" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2697173363&site=qq&menu=yes','','width=1024,height=768')">
+                    <img src="web/images/aside_r1.png" tppabs="http://mb3.uc697.com/web/images/aside_r1.png" alt="">
+                </a>
+            </li>
+            
+                
+                
+                
+            
+            <li>
+                <a href="javascript:;" class="daili_apply">
+                    <img src="web/images/aside_r4.png" tppabs="http://mb3.uc697.com/web/images/aside_r4.png" alt="">
+                </a>
+                
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="web/images/aside_r3.png" tppabs="http://mb3.uc697.com/web/images/aside_r3.png" alt="">
+                </a>
+                <img class="aside_erweima" src="" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="tai_footer">
+    <div class="footer-logo"></div>
+    <div class="footer-suggest">
+        <a href="javascript:;" class="aboutUs_modal">关于我们</a> |
+        <a href="javascript:;" class="daili_apply">代理加盟</a> |
+        <a href="javascript:;" class="cunkuanHelp_modal">存款帮助</a> |
+        <a href="javascript:;" class="qukuanHelp_modal">取款帮助</a> |
+        <a href="javascript:;" class="normalQues_modal">常见问题</a>
+    </div>
+    <div class="footer-suggest">
+        Copyright © 湘娱演示,联系Q：2697173363 Reserved
+    </div>
+</div>
+
+
+<div id="dailiModal" class="modal modal-login modal-daili">
+    <div class="modal-content">
+        <form method="POST" action="http://mb3.uc697.com/member/post_agent_apply">
+            <a href="" class="close bg-icon"></a>
+            <div class="modal-login_form">
+                <h2>代理申请</h2>
+                <div class="modal-login_line">
+                    <input type="text" placeholder="QQ" required name="qq">
+                </div>
+                <div class="modal-login_line">
+                    <input type="text" placeholder="联系电话" required name="phone">
+                </div>
+                <div class="modal-login_line" style="height: auto;margin-bottom: 15px">
+                    <textarea name="about" placeholder="填写申请"></textarea>
+                </div>
+                <div class="modal-login_line">
+                    <button class="modal-login_submit ajax-submit-btn" type="button">确定</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    var m = "";
+    var u = "login.htm"/*tpa=http://mb3.uc697.com/login*/;
+    (function($){
+        $(function(){
+            $('.daili_apply').on('click',function(){
+                if (!m)
+                {
+                    location.href=u
+                }else{
+                    $('#dailiModal').modal();
+                }
+            })
+        })
+    })(jQuery)
+</script>
+
+<div id="aboutUs" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="cunkuanHelp" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="qukuanHelp" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="normalQues" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div class="yk_backdrop"></div>
+
+<script>
+    (function($){
+        $(function(){
+            $('.aboutUs_modal').on('click',function(){
+                $('#aboutUs').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'关于我们',
+                    content:''
+                });
+            });
+            $('.cunkuanHelp_modal').on('click',function(){
+                $('#cunkuanHelp').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'存款帮助',
+                    content:''
+                });
+            });
+            $('.qukuanHelp_modal').on('click',function(){
+                $('#qukuanHelp').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'取款帮助',
+                    content:''
+                });
+            });
+            $('.normalQues_modal').on('click',function(){
+                $('#normalQues').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'常见问题',
+                    content:''
+                });
+            });
+        });
+    })(jQuery);
+</script>
+<script src="web/js/jquery.flexslider.js" tppabs="http://mb3.uc697.com/web/js/jquery.flexslider.js"></script>
+<script src="web/js/index1.js" tppabs="http://mb3.uc697.com/web/js/index1.js"></script>
+<script src="web/js/yk_modal.js" tppabs="http://mb3.uc697.com/web/js/yk_modal.js"></script>
+<script src="web/js/jquery.SuperSlide.2.1.1.js" tppabs="http://mb3.uc697.com/web/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="web/layer/layer.js" tppabs="http://mb3.uc697.com/web/layer/layer.js"></script>
+<script src="web/js/ajax-submit-form.js" tppabs="http://mb3.uc697.com/web/js/ajax-submit-form.js"></script>
+<script src="web/js/jquery.lazyload.min.js" tppabs="http://mb3.uc697.com/web/js/jquery.lazyload.min.js"></script>
+<script src="web/js/jquery.fly.min.js" tppabs="http://mb3.uc697.com/web/js/jquery.fly.min.js"></script>
+<script src="web/js/common.js" tppabs="http://mb3.uc697.com/web/js/common.js"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
+</body>
+</html>

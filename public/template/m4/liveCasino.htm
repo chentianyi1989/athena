@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8"UTF-8">
+    <title>湘娱演示,联系Q：2697173363</title>
+    <meta name="csrf-token" content="PRqwyz7BiSPWRGfNCNmhIwKC3SVbIOKhzTOe1FeQ">
+    <meta name="keywords" content="湘娱演示,联系Q：2697173363">
+    <link rel="stylesheet" href="web/css/flexslider.css" tppabs="http://mb3.uc697.com/web/css/flexslider.css">
+    <link rel="stylesheet" href="web/css/style.css" tppabs="http://mb3.uc697.com/web/css/style.css">
+    <link rel="stylesheet" href="web/css/index1.css" tppabs="http://mb3.uc697.com/web/css/index1.css">
+    <link rel="stylesheet" href="web/fonts/iconfont.css" tppabs="http://mb3.uc697.com/web/fonts/iconfont.css">
+    <link rel="stylesheet" href="web/css/yk_modal.css" tppabs="http://mb3.uc697.com/web/css/yk_modal.css">
+    <script src="web/js/jquery-2.1.3.min.js" tppabs="http://mb3.uc697.com/web/js/jquery-2.1.3.min.js"></script>
+</head>
+<body class="lay-out">
+
+<!--登录模态框-->
+<div id="login" class="modal modal-login">
+    <div class="modal-content">
+        <form method="POST" action="http://mb3.uc697.com/member/login">
+            <a href="" class="close bg-icon"></a>
+            <div class="modal-login_form">
+                <h2>用户登录</h2>
+                <div class="modal-login_line">
+                    <input class="username" type="text" placeholder="请输入用户名" required name="name">
+                </div>
+                <div class="modal-login_line">
+                    <input class="psw" type="password" placeholder="请输入密码" required name="password">
+                </div>
+                <!-- <div class="modal-login_line code">
+                    <input type="text" placeholder="请输入验证码" required name="code">
+                    <img src="" alt="" width="100">
+                </div> -->
+                <div class="modal-login_line">
+                    <button class="modal-login_submit ajax-submit-btn" type="button">登录</button>
+                </div>
+                <div class="modal-login_link clear">
+                    <p class="pullRight">
+                        还没有账号？
+                        <a href="r.htm" tppabs="http://mb3.uc697.com/r">点击注册</a>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--半透明遮罩层-->
+<div class="backdrop"></div>
+
+
+<div class="tai_header">
+    <div class="tai_header-top">
+        <div class="container">
+            <div class="language">
+                <span class="pic01"></span>
+            </div>
+            <div class="div-tel">
+                24小时客服QQ: 2697173363
+                <span style="margin-left: 10px;">美东时间: <em id="mdtime"></em></span>
+            </div>
+            <ul class="top-nav">
+                
+                    
+                    
+                
+                <li>
+                    <a style="color: red" href="javascript:;" class="slide_down">
+                        牌照展示
+                        <img src="web/images/paizhao.png" tppabs="http://mb3.uc697.com/web/images/paizhao.png" alt="">
+                    </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="login.htm" tppabs="http://mb3.uc697.com/member/finance_center">快速充值</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="javascript:;" class="daili_apply">代理合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="activities.htm" tppabs="http://mb3.uc697.com/activities">活动大厅</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                </li>
+                <li>
+                    <a style="color: red" href="" target="_blank">手机APP下载</a>
+                </li>
+                
+                    
+                    
+                        
+                        
+                    
+                
+            </ul>
+        </div>
+    </div>
+    <div class="tai_nav">
+        <span class="logo-bg">
+            <img src="" alt="">
+        </span>
+        <ul class="pullRight">
+            <li >
+                <a href="index.htm" tppabs="http://mb3.uc697.com/">
+                    首页
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li class="has-menu on ">
+                <a href="liveCasino.htm" tppabs="http://mb3.uc697.com/liveCasino">
+                    真人视讯
+                    <span>LIVE CASINO</span>
+                </a>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                
+            </li>
+            <li >
+                <a href="lottory.htm" tppabs="http://mb3.uc697.com/lottory">
+                    彩票游戏
+                    <span>LOTTORY</span>
+                </a>
+            </li>
+            <li >
+                <a href="eGame-api_name=MG.htm" tppabs="http://mb3.uc697.com/eGame?api_name=MG">
+                    电子游艺
+                    <span>EGAMES</span>
+                </a>
+            </li>
+            <li >
+                <a href="catchFish.htm" tppabs="http://mb3.uc697.com/catchFish">
+                    捕鱼游戏
+                    <span>CATCHFISH</span>
+                </a>
+            </li>
+            <li >
+                <a href="esports.htm" tppabs="http://mb3.uc697.com/esports">
+                    体育游戏
+                    <span>ESPORTS</span>
+                </a>
+            </li>
+                            <li>
+                    <a href="javascript:;"
+                        onclick="return layer.msg('请先登录!',{icon:6})" >
+                        棋牌游戏 <span class="en">Poker</span>
+                    </a>
+                </li>
+                        <li >
+                <a href="activities.htm" tppabs="http://mb3.uc697.com/activities">
+                    优惠活动
+                    <span>PROMOTIONS</span>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank" >
+                    手机投注
+                    <span>MOBILE</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;"  onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2697173363&site=qq&menu=yes','','width=1024,height=768')">
+                    在线客服
+                    <span>SERVICE</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="tai_header-bot  scrollTop ">
+    <div class="wrapper">
+        <div class="account-box">
+                            <form method="POST" action="http://mb3.uc697.com/member/login">
+                    <input type="text" id="login_account" placeholder="账号" class="username" required name="name">
+                    <input type="password" id="login_password" placeholder="密码" class="psw" required name="password">
+                    <div class="check-code-wrapper">
+                        <input type="text" placeholder="请输入验证码" required name="captcha" onfocus="re_captcha_re();">
+                        <img onclick="javascript:re_captcha_re();" src="kit/captcha/1" tppabs="http://mb3.uc697.com/kit/captcha/1"
+                             id="c2c98f0de5a04167a9e427d883690ff11"
+                        style="display: inline-block;width: 80px;">
+                        <script>
+                            function re_captcha_re() {
+                                $url = "http://mb3.uc697.com/kit/captcha";
+                                $url = $url + "/" + Math.random();
+                                document.getElementById('c2c98f0de5a04167a9e427d883690ff11').src=$url;
+                            }
+                        </script>
+                    </div>
+                    <button class="login-box modal-login_submit ajax-submit-btn" type="button">立即登录</button>
+
+                    <a href="r.htm" tppabs="http://mb3.uc697.com/r" class="join-btn">免费开户</a>
+                </form>
+                    </div>
+    </div>
+</div>
+  <link rel="stylesheet" href="web/css/9388/live.css" tppabs="http://mb3.uc697.com/web/css/9388/live.css">
+
+  <!--banner-->
+  <div class="banner" style="height: 355px;">
+    <div class="bd">
+      <ul>
+        <li>
+          <img src="web/images/zhenren/banner.jpg" tppabs="http://mb3.uc697.com/web/images/zhenren/banner.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--notice-->
+
+
+  <!--notice-->
+  <div class="notice-row">
+    <div class="noticeBox">
+      <div class="w">
+        <div class="title">
+          最新公告：
+        </div>
+        <div class="bd2">
+          <div id="memberLatestAnnouncement" style="cursor:pointer;color:#fff;">
+            <marquee id="mar0" scrollamount="3" scrolldelay="100" direction="left"
+                     onmouseover="this.stop();" onmouseout="this.start();">
+                              <span>~湘娱Game唯一联系方式~</span>
+                <span>QQ:2697173363、2697173363</span>
+                          </marquee>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="zhenrenPage">
+    <div class="zhenren w">
+      <ul>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo2.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo2.png" alt=""></div>
+            <div class="xx2">日本AV荷官女郎<br>为您发牌</div>
+            <div class="xx4">
+              <span>AG 女优厅</span>
+              <a href="javascript:void(0);" title="AG"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/2.png" tppabs="http://mb3.uc697.com/web/images/zhenren/2.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo3.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo3.png" alt=""></div>
+            <div class="xx2">亚洲最流行的<br>真人娱乐</div>
+            <div class="xx4">
+              <span>BBIN 旗舰厅</span>
+              <a href="javascript:void(0);" title="BBIN"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/3.png" tppabs="http://mb3.uc697.com/web/images/zhenren/3.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo4.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo4.png" alt=""></div>
+            <div class="xx2">最专业的完善<br>的娱乐平台</div>
+            <div class="xx4">
+              <span>AB 视讯厅</span>
+              <a href="javascript:void(0);" title="AB"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/4.png" tppabs="http://mb3.uc697.com/web/images/zhenren/4.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo6.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo6.png" alt=""></div>
+            <div class="xx2">最专业的完善<br>的娱乐平台</div>
+            <div class="xx4">
+              <span>MG 视讯厅</span>
+              <a href="javascript:void(0);" title="MG"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/6.png" tppabs="http://mb3.uc697.com/web/images/zhenren/6.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo10.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo10.png" alt=""></div>
+            <div class="xx2">体验英式赌场的<br>视觉冲击</div>
+            <div class="xx4">
+              <span>BG 旗舰厅</span>
+              <a href="javascript:void(0);" title="BG"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/7.png" tppabs="http://mb3.uc697.com/web/images/zhenren/7.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo11.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo11.png" alt=""></div>
+            <div class="xx2">最专业的完善的<br>娱乐平台</div>
+            <div class="xx4">
+              <span>PT 视讯厅</span>
+              <a href="javascript:void(0);" title="PT"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/8.png" tppabs="http://mb3.uc697.com/web/images/zhenren/8.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logo12.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo12.png" alt=""></div>
+            <div class="xx2">最专业的完善的<br>娱乐平台</div>
+            <div class="xx4">
+              <span>CG 视讯厅</span>
+              <a href="javascript:void(0);" title="CG"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/9.png" tppabs="http://mb3.uc697.com/web/images/zhenren/9.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logosa.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logosa.png" alt=""></div>
+            <div class="xx2">最专业的完善的<br>娱乐平台</div>
+            <div class="xx4">
+              <span>SA 视讯厅</span>
+              <a href="javascript:void(0);" title="SA"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/5.png" tppabs="http://mb3.uc697.com/web/images/zhenren/5.png"></div>
+          </li>
+                                  <li>
+            <div class="xx1"><img src="web/images/zhenren/logo7.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logo7.png" alt=""></div>
+            <div class="xx2">最专业的完善的<br>娱乐平台</div>
+            <div class="xx4">
+              <span>OG 视讯厅</span>
+              <a href="javascript:void(0);" title="OG"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/12.png" tppabs="http://mb3.uc697.com/web/images/zhenren/12.png"></div>
+          </li>
+                          <li>
+            <div class="xx1"><img src="web/images/zhenren/logosb.png" tppabs="http://mb3.uc697.com/web/images/zhenren/logosb.png" alt=""></div>
+            <div class="xx2">最专业的完善的<br>娱乐平台</div>
+            <div class="xx4">
+              <span>申博视讯厅</span>
+              <a href="javascript:void(0);" title="SUNBET"
+                  onclick="return layer.msg('请先登录!',{icon:6})" >进入游戏</a>
+            </div>
+            <div class="xx5"><img src="web/images/zhenren/1.png" tppabs="http://mb3.uc697.com/web/images/zhenren/1.png"></div>
+          </li>
+                        <li class="more">
+
+        </li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="notice_layer">
+    <h3>公告详情 <span class="close"></span></h3>
+    <div class="notice_con">
+              <div class="module">
+          <h4>湘娱Game唯一联系方式</h4>
+          <p>✿QQ:2697173363、2697173363</p>
+        </div>
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+  <script>
+
+
+    (function ($) {
+      $(function () {
+
+        //公告
+        $('#mar0').on('click', function () {
+          var notice_index = layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            area: ['680px'],
+            skin: 'layui-layer-nobg', //没有背景色
+            shadeClose: true,
+            content: $('.notice_layer')
+          });
+
+          $('.notice_layer').on('click', '.close', function () {
+            layer.close(notice_index)
+          })
+        })
+
+      })
+    })(jQuery)
+  </script>
+<div class="aside">
+    <div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <ul>
+            <li>
+                <a href="javascript:;" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2697173363&site=qq&menu=yes','','width=1024,height=768')">
+                    <img src="web/images/aside_r1.png" tppabs="http://mb3.uc697.com/web/images/aside_r1.png" alt="">
+                </a>
+            </li>
+            
+                
+                
+                
+            
+            <li>
+                <a href="javascript:;" class="daili_apply">
+                    <img src="web/images/aside_r4.png" tppabs="http://mb3.uc697.com/web/images/aside_r4.png" alt="">
+                </a>
+                
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="web/images/aside_r3.png" tppabs="http://mb3.uc697.com/web/images/aside_r3.png" alt="">
+                </a>
+                <img class="aside_erweima" src="" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="tai_footer">
+    <div class="footer-logo"></div>
+    <div class="footer-suggest">
+        <a href="javascript:;" class="aboutUs_modal">关于我们</a> |
+        <a href="javascript:;" class="daili_apply">代理加盟</a> |
+        <a href="javascript:;" class="cunkuanHelp_modal">存款帮助</a> |
+        <a href="javascript:;" class="qukuanHelp_modal">取款帮助</a> |
+        <a href="javascript:;" class="normalQues_modal">常见问题</a>
+    </div>
+    <div class="footer-suggest">
+        Copyright © 湘娱演示,联系Q：2697173363 Reserved
+    </div>
+</div>
+
+
+<div id="dailiModal" class="modal modal-login modal-daili">
+    <div class="modal-content">
+        <form method="POST" action="http://mb3.uc697.com/member/post_agent_apply">
+            <a href="" class="close bg-icon"></a>
+            <div class="modal-login_form">
+                <h2>代理申请</h2>
+                <div class="modal-login_line">
+                    <input type="text" placeholder="QQ" required name="qq">
+                </div>
+                <div class="modal-login_line">
+                    <input type="text" placeholder="联系电话" required name="phone">
+                </div>
+                <div class="modal-login_line" style="height: auto;margin-bottom: 15px">
+                    <textarea name="about" placeholder="填写申请"></textarea>
+                </div>
+                <div class="modal-login_line">
+                    <button class="modal-login_submit ajax-submit-btn" type="button">确定</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    var m = "";
+    var u = "login.htm"/*tpa=http://mb3.uc697.com/login*/;
+    (function($){
+        $(function(){
+            $('.daili_apply').on('click',function(){
+                if (!m)
+                {
+                    location.href=u
+                }else{
+                    $('#dailiModal').modal();
+                }
+            })
+        })
+    })(jQuery)
+</script>
+
+<div id="aboutUs" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="cunkuanHelp" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="qukuanHelp" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div id="normalQues" class="yk_modal">
+    <div class="yk_modal-container">
+        <a data-close="close" href="javascript:;" class="yk_modal-close"></a>
+        <div class="yk_modal-hd"></div>
+        <div class="yk_modal-content"></div>
+        <div class="yk_modal-ft">
+            <a href="javascript:;" class="yk_btn-sure">确定</a>
+        </div>
+    </div>
+</div>
+<div class="yk_backdrop"></div>
+
+<script>
+    (function($){
+        $(function(){
+            $('.aboutUs_modal').on('click',function(){
+                $('#aboutUs').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'关于我们',
+                    content:''
+                });
+            });
+            $('.cunkuanHelp_modal').on('click',function(){
+                $('#cunkuanHelp').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'存款帮助',
+                    content:''
+                });
+            });
+            $('.qukuanHelp_modal').on('click',function(){
+                $('#qukuanHelp').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'取款帮助',
+                    content:''
+                });
+            });
+            $('.normalQues_modal').on('click',function(){
+                $('#normalQues').yk_modal({
+                    animate:'slide',
+                    width:'800px',
+                    height:'500px',
+                    title:'常见问题',
+                    content:''
+                });
+            });
+        });
+    })(jQuery);
+</script>
+<script src="web/js/jquery.flexslider.js" tppabs="http://mb3.uc697.com/web/js/jquery.flexslider.js"></script>
+<script src="web/js/index1.js" tppabs="http://mb3.uc697.com/web/js/index1.js"></script>
+<script src="web/js/yk_modal.js" tppabs="http://mb3.uc697.com/web/js/yk_modal.js"></script>
+<script src="web/js/jquery.SuperSlide.2.1.1.js" tppabs="http://mb3.uc697.com/web/js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="web/layer/layer.js" tppabs="http://mb3.uc697.com/web/layer/layer.js"></script>
+<script src="web/js/ajax-submit-form.js" tppabs="http://mb3.uc697.com/web/js/ajax-submit-form.js"></script>
+<script src="web/js/jquery.lazyload.min.js" tppabs="http://mb3.uc697.com/web/js/jquery.lazyload.min.js"></script>
+<script src="web/js/jquery.fly.min.js" tppabs="http://mb3.uc697.com/web/js/jquery.fly.min.js"></script>
+<script src="web/js/common.js" tppabs="http://mb3.uc697.com/web/js/common.js"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
+</body>
+</html>
